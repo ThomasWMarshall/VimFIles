@@ -10,26 +10,26 @@ snippet include
 # main
 snippet main
 	int main () {
+	  ${1}
 		
-		${1}	
-		
-		return 0;
+	  return 0;
 	}
 
 #while
 snippet while
 	while (${1:true}) {
-		${2}
+	  ${2}
+		
 	}
 
 # for i
 snippet for
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
-		${4}
+	  ${4}
 	}
 
 # foreach
 snippet fore
 	for (${1:auto} ${2:i} : ${3:container}) {
-		${4}
+	  ${4}
 	}
